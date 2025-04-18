@@ -1,0 +1,3672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy: Online Courses - Learn Anything, On Your Schedule</title>
+    <link rel="icon" href="https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <style>
+        :root {
+            --udemy-purple: #5624d0;
+            --udemy-dark-purple: #401b9c;
+            --udemy-black: #1c1d1f;
+            --udemy-white: #fff;
+            --udemy-gray: #6a6f73;
+            --udemy-light-gray: #f7f9fa;
+            --udemy-border: #d1d7dc;
+            --udemy-yellow: #f69c08;
+            --udemy-red: #b32d0f;
+            --udemy-teal: #c2f0ef;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--udemy-white);
+            color: var(--udemy-black);
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        /* Flash Sale Banner */
+        .flash-sale {
+            background-color: var(--udemy-teal);
+            padding: 16px;
+            text-align: center;
+            position: relative;
+        }
+
+        .flash-sale p {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--udemy-black);
+        }
+
+        .flash-sale .highlight {
+            color: var(--udemy-black);
+            font-weight: 700;
+        }
+
+        .close-banner {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: var(--udemy-black);
+        }
+
+        /* Header Styles */
+        header {
+            border-bottom: 1px solid var(--udemy-border);
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            background: var(--udemy-white);
+            z-index: 100;
+        }
+
+        .navbar {
+            height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1344px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 91px;
+            height: 34px;
+        }
+
+        .nav-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .nav-link {
+            color: var(--udemy-black);
+            text-decoration: none;
+            padding: 0 16px;
+            font-weight: 500;
+            font-size: 14px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link:hover {
+            color: var(--udemy-purple);
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 24px;
+            position: relative;
+        }
+
+        .search-form {
+            display: flex;
+            height: 48px;
+            border: 1px solid var(--udemy-border);
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: #f7f9fa;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 0 16px;
+            font-size: 14px;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .search-button {
+            width: 48px;
+            background-color: transparent;
+            color: var(--udemy-gray);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--udemy-black);
+            text-decoration: none;
+            padding: 8px 12px;
+            white-space: nowrap;
+        }
+
+        .control-link:hover {
+            color: var(--udemy-purple);
+        }
+
+        .cart-icon {
+            color: var(--udemy-black);
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .login-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--udemy-black);
+            border-radius: 4px;
+            background: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .signup-btn {
+            padding: 8px 16px;
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .language-btn {
+            border: 1px solid var(--udemy-border);
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* Career Hero Section */
+        .career-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .career-banner {
+            display: flex;
+            background-color: #f8f9fb;
+            border-radius: 8px;
+            margin: 32px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .flash-promo {
+            padding: 32px;
+            max-width: 400px;
+        }
+
+        .flash-promo h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .flash-promo p {
+            font-size: 16px;
+            color: var(--udemy-gray);
+        }
+
+        .career-banner img {
+            max-width: 50%;
+            object-fit: cover;
+        }
+
+        .career-reimagine {
+            margin: 48px 0;
+        }
+
+        .career-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .career-subtitle {
+            font-size: 19px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+        }
+
+        .career-paths {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .career-path-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            overflow: hidden;
+            padding-bottom: 24px;
+        }
+
+        .career-path-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .career-path-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 16px 16px 8px;
+        }
+
+        .career-path-card p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin: 0 16px 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #eceb98;
+            color: var(--udemy-black);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-left: 16px;
+        }
+
+        .career-btn {
+            background-color: transparent;
+            border: 1px solid var(--udemy-black);
+            color: var(--udemy-black);
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 16px;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin: 48px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+            max-width: 800px;
+        }
+
+        .skills-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            white-space: nowrap;
+        }
+
+        .skill-tab {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--udemy-gray);
+            cursor: pointer;
+            border-radius: 30px;
+        }
+
+        .skill-tab.active {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+        }
+
+        .popular-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .category-chip {
+            padding: 8px 16px;
+            background-color: var(--udemy-light-gray);
+            border: 1px solid var(--udemy-border);
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .category-chip:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        /* Top Courses */
+        .top-courses {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .course-card {
+            background-color: var(--udemy-white);
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 16px;
+        }
+
+        .course-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 42px;
+        }
+
+        .course-instructor {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .course-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .rating-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: #e59819;
+        }
+
+        .fa-star, .fa-star-half-alt {
+            color: #e59819;
+            font-size: 12px;
+        }
+
+        .rating-count {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            font-weight: 400;
+        }
+
+        .course-meta {
+            margin-bottom: 8px;
+        }
+
+        .bestseller {
+            display: inline-block;
+            background-color: #eceb98;
+            color: #3d3c0a;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .course-price {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /* Learning Goals Section */
+        .learning-goals {
+            margin: 48px 0;
+            background-color: var(--udemy-light-gray);
+            padding: 48px 0;
+        }
+
+        .goals-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .goal-card {
+            display: flex;
+            gap: 16px;
+            padding: 24px;
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            border: 1px solid var(--udemy-border);
+        }
+
+        .goal-icon {
+            font-size: 24px;
+            color: var(--udemy-purple);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(86, 36, 208, 0.1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .goal-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .goal-content p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .learn-more {
+            color: var(--udemy-purple);
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .learn-more i {
+            font-size: 10px;
+        }
+
+        /* Plans Section */
+        .plans-section {
+            margin: 48px 0;
+        }
+
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .plan-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .plan-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .plan-subtitle {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin-bottom: 16px;
+        }
+
+        .plan-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        .plan-features {
+            list-style: none;
+        }
+
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .plan-features i {
+            color: var(--udemy-purple);
+            font-size: 14px;
+        }
+
+        /* Success Stories */
+        .success-stories {
+            margin: 48px 0;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .story-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .story-quote {
+            margin-bottom: 16px;
+        }
+
+        .story-quote p {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .story-person {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .story-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        .story-person p {
+            font-size: 12px;
+            color: var(--udemy-gray);
+        }
+
+        /* Trends Section */
+        .trends-section {
+            margin: 48px 0;
+        }
+
+        .trends-container {
+            display: flex;
+            background-color: var(--udemy-purple);
+            border-radius: 8px;
+            color: var(--udemy-white);
+            overflow: hidden;
+        }
+
+        .trends-content {
+            padding: 48px;
+            max-width: 50%;
+        }
+
+        .trends-content p {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .trends-btn {
+            padding: 12px 24px;
+            background-color: var(--udemy-white);
+            color: var(--udemy-black);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .trends-image {
+            max-width: 50%;
+        }
+
+        .trends-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Trending Skills */
+        .trending-skills {
+            margin: 48px 0;
+        }
+
+        .trending-categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .trending-category h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .skill-link {
+            color: var(--udemy-purple);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .skill-link i {
+            font-size: 10px;
+        }
+
+        .trending-links {
+            list-style: none;
+        }
+
+        .trending-links li {
+            margin-bottom: 12px;
+        }
+
+        .trending-links a {
+            color: var(--udemy-purple);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Case Study */
+        .case-study {
+            margin: 48px 0;
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .case-study-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--udemy-border);
+        }
+
+        .case-study-header h4 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .case-study-content {
+            padding: 32px 24px;
+        }
+
+        .case-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            max-width: 80%;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--udemy-purple);
+        }
+
+        .stat-description {
+            font-size: 14px;
+            color: var(--udemy-gray);
+        }
+
+        .case-study-btn {
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Business Banner */
+        .business-banner {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 32px 0;
+        }
+
+        .banner-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .banner-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            max-width: 600px;
+        }
+
+        .banner-title .highlight {
+            color: #a1a7b3;
+        }
+
+        .company-logos {
+            display: flex;
+            gap: 40px;
+        }
+
+        .company-logos img {
+            height: 44px;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+
+
+        /* Skills Directory */
+        .skills-directory {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 48px 0;
+        }
+
+        .directory-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .directory-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .column-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-white);
+        }
+
+        .directory-links {
+            list-style: none;
+        }
+
+        .directory-links li {
+            margin-bottom: 8px;
+        }
+
+        .directory-links a {
+            color: #a1a7b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .directory-links a:hover {
+            color: var(--udemy-white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            width: calc(16.66% - 16px);
+            margin-right: 16px;
+            margin-bottom: 24px;
+        }
+
+        .footer-section h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-white);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #a1a7b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--udemy-white);
+        }
+
+        .footer-bottom {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-logo {
+            height: 32px;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #a1a7b3;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-btn-footer {
+            background: none;
+            border: none;
+            color: var(--udemy-white);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .language-btn-footer i {
+            font-size: 16px;
+        }
+
+        /* AI Recommender */
+        .ai-recommender {
+            padding: 64px 0;
+            background-color: #f6f9fb;
+        }
+
+        .recommender-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .recommender-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-black);
+        }
+
+        .recommender-subtitle {
+            font-size: 18px;
+            color: var(--udemy-gray);
+            margin-bottom: 32px;
+            max-width: 800px;
+        }
+
+        .recommender-form {
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+    margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .recommender-button {
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .recommender-button:hover {
+            background-color: var(--udemy-dark-purple);
+        }
+
+        .recommendation-results {
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+        }
+
+        .results-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-black);
+        }
+
+        .results-subtitle {
+            font-size: 16px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+        }
+
+        .recommended-courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .recommendation-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .recommendation-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .recommendation-content {
+            padding: 16px;
+        }
+
+        .recommendation-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 42px;
+        }
+
+        .recommendation-instructor {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .recommendation-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .recommendation-price {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .recommendation-note {
+            background-color: rgba(86, 36, 208, 0.05);
+            border-radius: 4px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .recommendation-note p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .save-recommendations {
+            background-color: transparent;
+            border: 1px solid var(--udemy-black);
+            color: var(--udemy-black);
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 1200px) {
+            .career-paths {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .top-courses {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .stories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .trending-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .directory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .recommended-courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .career-banner {
+                flex-direction: column;
+            }
+            
+            .career-banner img {
+                max-width: 100%;
+            }
+            
+            .top-courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .goals-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .plans-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .trends-container {
+                flex-direction: column;
+            }
+            
+            .trends-content {
+                max-width: 100%;
+            }
+            
+            .trends-image {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .control-link {
+                display: none;
+            }
+            
+            .career-paths {
+                grid-template-columns: 1fr;
+            }
+            
+            .top-courses {
+                grid-template-columns: 1fr;
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .trending-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .directory-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .company-logos {
+                flex-wrap: wrap;
+            }
+            
+            .recommended-courses {
+                grid-template-columns: 1fr;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style> -->
+
+
+    <style>
+        :root {
+            --udemy-purple: #5624d0;
+            --udemy-dark-purple: #401b9c;
+            --udemy-black: #1c1d1f;
+            --udemy-white: #fff;
+            --udemy-gray: #6a6f73;
+            --udemy-light-gray: #f7f9fa;
+            --udemy-border: #d1d7dc;
+            --udemy-yellow: #f69c08;
+            --udemy-red: #b32d0f;
+            --udemy-teal: #c2f0ef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: var(--udemy-white);
+            color: var(--udemy-black);
+            font-size: 16px;
+            line-height: 1.4;
+            overflow-x: hidden;
+        }
+
+        /* Flash Sale Banner */
+        .flash-sale {
+            background-color: var(--udemy-teal);
+            padding: 16px;
+            text-align: center;
+            position: relative;
+        }
+
+        .flash-sale p {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--udemy-black);
+        }
+
+        .flash-sale .highlight {
+            color: var(--udemy-black);
+            font-weight: 700;
+        }
+
+        .close-banner {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: var(--udemy-black);
+        }
+
+        /* Header Styles */
+        header {
+            border-bottom: 1px solid var(--udemy-border);
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            background: var(--udemy-white);
+            z-index: 100;
+        }
+
+        .navbar {
+            height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1344px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 91px;
+            height: 34px;
+        }
+
+        .nav-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .nav-link {
+            color: var(--udemy-black);
+            text-decoration: none;
+            padding: 0 16px;
+            font-weight: 500;
+            font-size: 14px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link:hover {
+            color: var(--udemy-purple);
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 24px;
+            position: relative;
+        }
+
+        .search-form {
+            display: flex;
+            height: 48px;
+            border: 1px solid var(--udemy-border);
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: #f7f9fa;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 0 16px;
+            font-size: 14px;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .search-button {
+            width: 48px;
+            background-color: transparent;
+            color: var(--udemy-gray);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--udemy-black);
+            text-decoration: none;
+            padding: 8px 12px;
+            white-space: nowrap;
+        }
+
+        .control-link:hover {
+            color: var(--udemy-purple);
+        }
+
+        .cart-icon {
+            color: var(--udemy-black);
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .login-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--udemy-black);
+            border-radius: 4px;
+            background: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .signup-btn {
+            padding: 8px 16px;
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .language-btn {
+            border: 1px solid var(--udemy-border);
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* Career Hero Section */
+        .career-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .career-banner {
+            display: flex;
+            background-color: #f8f9fb;
+            border-radius: 8px;
+            margin: 32px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .flash-promo {
+            padding: 32px;
+            max-width: 400px;
+        }
+
+        .flash-promo h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .flash-promo p {
+            font-size: 16px;
+            color: var(--udemy-gray);
+        }
+
+        .career-banner img {
+            max-width: 50%;
+            object-fit: cover;
+        }
+
+        .career-reimagine {
+            margin: 48px 0;
+        }
+
+        .career-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .career-subtitle {
+            font-size: 19px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+        }
+
+        .career-paths {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .career-path-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            overflow: hidden;
+            padding-bottom: 24px;
+        }
+
+        .career-path-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .career-path-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 16px 16px 8px;
+        }
+
+        .career-path-card p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin: 0 16px 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #eceb98;
+            color: var(--udemy-black);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-left: 16px;
+        }
+
+        .career-btn {
+            background-color: transparent;
+            border: 1px solid var(--udemy-black);
+            color: var(--udemy-black);
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 16px;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin: 48px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+            max-width: 800px;
+        }
+
+        .skills-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            padding-bottom: 8px;
+            white-space: nowrap;
+        }
+
+        .skills-tabs::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .skills-tabs::-webkit-scrollbar-thumb {
+            background-color: var(--udemy-border);
+            border-radius: 4px;
+        }
+
+        .skill-tab {
+            background: none;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--udemy-gray);
+            cursor: pointer;
+            border-radius: 30px;
+            flex-shrink: 0;
+        }
+
+        .skill-tab.active {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+        }
+
+        .popular-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 8px;
+        }
+
+        .category-chip {
+            padding: 8px 16px;
+            background-color: var(--udemy-light-gray);
+            border: 1px solid var(--udemy-border);
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .category-chip:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        /* Top Courses */
+        .top-courses {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .course-card {
+            background-color: var(--udemy-white);
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 16px;
+        }
+
+        .course-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 42px;
+        }
+
+        .course-instructor {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .course-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .rating-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: #e59819;
+        }
+
+        .fa-star, .fa-star-half-alt {
+            color: #e59819;
+            font-size: 12px;
+        }
+
+        .rating-count {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            font-weight: 400;
+        }
+
+        .course-meta {
+            margin-bottom: 8px;
+        }
+
+        .bestseller {
+            display: inline-block;
+            background-color: #eceb98;
+            color: #3d3c0a;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .course-price {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /* Learning Goals Section */
+        .learning-goals {
+            margin: 48px 0;
+            background-color: var(--udemy-light-gray);
+            padding: 48px 0;
+        }
+
+        .goals-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .goal-card {
+            display: flex;
+            gap: 16px;
+            padding: 24px;
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            border: 1px solid var(--udemy-border);
+        }
+
+        .goal-icon {
+            font-size: 24px;
+            color: var(--udemy-purple);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(86, 36, 208, 0.1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .goal-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .goal-content p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .learn-more {
+            color: var(--udemy-purple);
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .learn-more i {
+            font-size: 10px;
+        }
+
+        /* Plans Section */
+        .plans-section {
+            margin: 48px 0;
+        }
+
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .plan-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .plan-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .plan-subtitle {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            margin-bottom: 16px;
+        }
+
+        .plan-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        .plan-features {
+            list-style: none;
+        }
+
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .plan-features i {
+            color: var(--udemy-purple);
+            font-size: 14px;
+        }
+
+        /* Success Stories */
+        .success-stories {
+            margin: 48px 0;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .story-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .story-quote {
+            margin-bottom: 16px;
+        }
+
+        .story-quote p {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .story-person {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .story-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        .story-person p {
+            font-size: 12px;
+            color: var(--udemy-gray);
+        }
+
+        /* Trends Section */
+        .trends-section {
+            margin: 48px 0;
+        }
+
+        .trends-container {
+            display: flex;
+            background-color: var(--udemy-purple);
+            border-radius: 8px;
+            color: var(--udemy-white);
+            overflow: hidden;
+        }
+
+        .trends-content {
+            padding: 48px;
+            max-width: 50%;
+        }
+
+        .trends-content p {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .trends-btn {
+            padding: 12px 24px;
+            background-color: var(--udemy-white);
+            color: var(--udemy-black);
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .trends-image {
+            max-width: 50%;
+        }
+
+        .trends-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Trending Skills */
+        .trending-skills {
+            margin: 48px 0;
+        }
+
+        .trending-categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .trending-category h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .skill-link {
+            color: var(--udemy-purple);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .skill-link i {
+            font-size: 10px;
+        }
+
+        .trending-links {
+            list-style: none;
+        }
+
+        .trending-links li {
+            margin-bottom: 12px;
+        }
+
+        .trending-links a {
+            color: var(--udemy-purple);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Case Study */
+        .case-study {
+            margin: 48px 0;
+            border: 1px solid var(--udemy-border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .case-study-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--udemy-border);
+        }
+
+        .case-study-header h4 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .case-study-content {
+            padding: 32px 24px;
+        }
+
+        .case-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            max-width: 80%;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--udemy-purple);
+        }
+
+        .stat-description {
+            font-size: 14px;
+            color: var(--udemy-gray);
+        }
+
+        .case-study-btn {
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Business Banner */
+        .business-banner {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 32px 0;
+        }
+
+        .banner-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .banner-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            max-width: 600px;
+        }
+
+        .banner-title .highlight {
+            color: #a1a7b3;
+        }
+
+        .company-logos {
+            display: flex;
+            gap: 40px;
+        }
+
+        .company-logos img {
+            height: 44px;
+            filter: brightness(0) invert(1);
+            opacity: 0.7;
+        }
+
+        /* Skills Directory */
+        .skills-directory {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 48px 0;
+        }
+
+        .directory-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .directory-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .column-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-white);
+        }
+
+        .directory-links {
+            list-style: none;
+        }
+
+        .directory-links li {
+            margin-bottom: 8px;
+        }
+
+        .directory-links a {
+            color: #a1a7b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .directory-links a:hover {
+            color: var(--udemy-white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--udemy-black);
+            color: var(--udemy-white);
+            padding: 24px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            width: calc(16.66% - 16px);
+            margin-right: 16px;
+            margin-bottom: 24px;
+        }
+
+        .footer-section h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-white);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #a1a7b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--udemy-white);
+        }
+
+        .footer-bottom {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-logo {
+            height: 32px;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #a1a7b3;
+        }
+
+        .language-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-btn-footer {
+            background: none;
+            border: none;
+            color: var(--udemy-white);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .language-btn-footer i {
+            font-size: 16px;
+        }
+
+        /* AI Recommender */
+        .ai-recommender {
+            padding: 64px 0;
+            background-color: #f6f9fb;
+        }
+
+        .recommender-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .recommender-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-black);
+        }
+
+        .recommender-subtitle {
+            font-size: 18px;
+            color: var(--udemy-gray);
+            margin-bottom: 32px;
+            max-width: 800px;
+        }
+
+        .recommender-form {
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .recommender-button {
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .recommender-button:hover {
+            background-color: var(--udemy-dark-purple);
+        }
+
+        .recommendation-results {
+            background-color: var(--udemy-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+        }
+
+        .results-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--udemy-black);
+        }
+
+        .results-subtitle {
+            font-size: 16px;
+            color: var(--udemy-gray);
+            margin-bottom: 24px;
+        }
+
+        .recommended-courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .recommendation-card {
+            border: 1px solid var(--udemy-border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .recommendation-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .recommendation-content {
+            padding: 16px;
+        }
+
+        .recommendation-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 42px;
+        }
+
+        .recommendation-instructor {
+            font-size: 12px;
+            color: var(--udemy-gray);
+            margin-bottom: 8px;
+        }
+
+        .recommendation-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .recommendation-price {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background-color: var(--udemy-purple);
+            color: var(--udemy-white);
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .recommendation-note {
+            background-color: rgba(86, 36, 208, 0.05);
+            border-radius: 4px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .recommendation-note p {
+            font-size: 14px;
+            color: var(--udemy-gray);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .save-recommendations {
+            background-color: transparent;
+            border: 1px solid var(--udemy-black);
+            color: var(--udemy-black);
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Enhanced Responsive Styles */
+
+        /* Large Desktops (1200px and up) */
+        @media (min-width: 1200px) {
+            .career-container,
+            .recommender-container,
+            .banner-container,
+            .directory-container,
+            .footer-container,
+            .footer-bottom {
+                padding: 0 24px;
+            }
+        }
+
+        /* Standard Desktops (992px to 1199px) */
+        @media (max-width: 1199px) {
+            .career-paths {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .top-courses {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .trending-categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-section {
+                width: calc(20% - 16px);
+            }
+        }
+
+        /* Tablets and Small Desktops (768px to 991px) */
+        @media (max-width: 991px) {
+            .navbar {
+                padding: 0 16px;
+            }
+            
+            .search-container {
+                max-width: 400px;
+                margin: 0 12px;
+            }
+            
+            .control-link:not(:first-child) {
+                display: none;
+            }
+            
+            /* Banner adjustments */
+            .career-banner {
+                flex-direction: column;
+            }
+            
+            .flash-promo {
+                max-width: 100%;
+                padding: 24px;
+            }
+            
+            .career-banner img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* Grid adjustments */
+            .career-paths {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .top-courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .goals-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .plans-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            
+            .plan-card:last-child {
+                grid-column: span 2;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .stories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .trending-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .directory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .recommended-courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            /* Content adjustments */
+            .career-title {
+                font-size: 28px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            /* Trends section */
+            .trends-container {
+                flex-direction: column;
+            }
+            
+            .trends-content {
+                max-width: 100%;
+                padding: 32px;
+            }
+            
+            .trends-image {
+                max-width: 100%;
+            }
+            
+            /* Footer adjustments */
+            .footer-section {
+                width: calc(25% - 16px);
+            }
+        }
+
+        /* Medium Tablets and Large Phones (576px to 767px) */
+        @media (max-width: 767px) {
+            header {
+                padding: 0 12px;
+            }
+            
+            .navbar {
+                height: auto;
+                padding: 12px 8px;
+                flex-wrap: wrap;
+            }
+            
+            .logo-container {
+                margin-bottom: 8px;
+            }
+            
+            .search-container {
+                order: 3;
+                max-width: 100%;
+                width: 100%;
+                margin: 12px 0 0;
+            }
+            
+            .control-link {
+                display: none;
+            }
+            
+            .nav-item {
+                margin-right: 8px;
+            }
+            
+            .user-controls {
+                margin-left: auto;
+            }
+            
+            /* Content spacing */
+            .career-container,
+            .recommender-container,
+            .banner-container,
+            .directory-container {
+                padding: 0 16px;
+            }
+            
+            /* Grid adjustments */
+            .career-paths {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .top-courses {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .plans-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .plan-card:last-child {
+                grid-column: auto;
+                max-width: 100%;
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .trending-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .directory-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .recommended-courses {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            /* Text size adjustments */
+            .career-title {
+                font-size: 24px;
+            }
+            
+            .career-subtitle {
+                font-size: 16px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .section-subtitle {
+                font-size: 14px;
+            }
+            
+            .flash-promo h2 {
+                font-size: 20px;
+            }
+            
+            .flash-promo p {
+                font-size: 14px;
+            }
+            
+            .case-title {
+                font-size: 20px;
+                max-width: 100%;
+            }
+            
+            .recommender-title {
+                font-size: 24px;
+            }
+            
+            .recommender-subtitle {
+                font-size: 16px;
+            }
+            
+            /* Footer adjustments */
+            .footer-section {
+                width: calc(50% - 16px);
+            }
+            
+            .company-logos {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            
+            .company-logos img {
+                height: 36px;
+            }
+            
+            /* AI Recommender Form */
+            .recommender-form {
+                padding: 24px 16px;
+            }
+            
+            .recommendation-results {
+                padding: 24px 16px;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
+        /* Small Phones (up to 575px) */
+        @media (max-width: 575px) {
+            /* Flash Sale Banner */
+            .flash-sale {
+                padding: 12px 36px 12px 12px;
+            }
+            
+            .flash-sale p {
+                font-size: 12px;
+            }
+            
+            .close-banner {
+                right: 8px;
+            }
+            
+            /* Navigation */
+            .navbar {
+                padding: 8px 4px;
+            }
+            
+            .login-btn, 
+            .signup-btn {
+                padding: 6px 10px;
+                font-size: 13px;
+            }
+            
+            .nav-link {
+                padding: 0 8px;
+                font-size: 13px;
+            }
+            
+            .language-btn {
+                width: 32px;
+                height: 32px;
+            }
+            
+            /* Content spacing */
+            .career-container,
+            .recommender-container,
+            .banner-container,
+            .directory-container {
+                padding: 0 12px;
+            }
+            
+            .career-banner {
+                margin: 16px 0;
+            }
+            
+            .career-reimagine {
+                margin: 32px 0;
+            }
+            
+            /* Text adjustments */
+            .career-title {
+                font-size: 22px;
+            }
+            
+            .section-title {
+                font-size: 22px;
+            }
+            
+            /* Card adjustments */
+            .goal-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+            
+            .goal-icon {
+                margin-bottom: 16px;
+            }
+            
+            .course-content {
+                padding: 12px;
+            }
+            
+            .story-card {
+                padding: 16px;
+            }
+            
+            .case-study-content {
+                padding: 24px 16px;
+            }
+            
+            /* Footer adjustments */
+            .footer-section {
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                align-items: flex-start;
+                padding: 16px;
+            }
+            
+            /* Touch target sizing */
+            .career-btn,
+            .plan-btn,
+            .trends-btn,
+            .case-study-btn,
+            .recommender-button,
+            .save-recommendations,
+            .add-to-cart {
+                min-height: 44px;
+            }
+            
+            /* Button text adjustments */
+            .recommender-button {
+                font-size: 14px;
+                padding: 12px 16px;
+            }
+            
+            /* Form adjustments */
+            .form-group label {
+                font-size: 14px;
+            }
+            
+            .form-group input,
+            .form-group select {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            /* Directory links */
+            .directory-links a {
+                display: block;
+                padding: 8px 0;
+            }
+        }
+
+        /* Tiny Phones (up to 375px) */
+        @media (max-width: 375px) {
+            /* Header adjustments */
+            .login-btn, 
+            .signup-btn {
+                padding: 6px 8px;
+                font-size: 12px;
+            }
+            
+            .cart-icon {
+                padding: 6px;
+            }
+            
+            /* Content adjustments */
+            .career-title,
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .career-subtitle {
+                font-size: 14px;
+            }
+            
+            .flash-promo {
+                padding: 16px;
+            }
+            
+            .flash-promo h2 {
+                font-size: 18px;
+            }
+            
+            /* Course cards */
+            .course-title {
+                font-size: 14px;
+            }
+            
+            /* Directory */
+            .directory-title {
+                font-size: 18px;
+            }
+            
+            .column-title {
+                font-size: 15px;
+            }
+            
+            /* AI Recommender */
+            .recommender-title {
+                font-size: 20px;
+            }
+            
+            .recommender-form,
+            .recommendation-results {
+                padding: 16px 12px;
+            }
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+    <!-- Content will be added in subsequent parts -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Udemy: Online Courses - Learn Anything, On Your Schedule</title>
+        <link rel="icon" href="https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- CSS will be included here from parts 1-8 -->
+    </head>
+    <body>
+        <!-- Flash Sale Banner -->
+        <div class="flash-sale">
+            <p>⚡ Flash Sale | One day only! Courses now as low as ₹499. Ends in 10h 20m 41s.</p>
+            <button class="close-banner" aria-label="Close banner">✕</button>
+        </div>
+    
+        <header>
+            <div class="navbar">
+                <div class="logo-container">
+                    <img class="logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy">
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Explore</a>
+                </div>
+                
+                <div class="search-container">
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="Find expert-led courses to boost your career">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="user-controls">
+                    <a href="#" class="control-link">Plans & Pricing</a>
+                    <a href="#" class="control-link">Udemy Business</a>
+                    <a href="#" class="control-link">Teach on Udemy</a>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="login-btn">Log in</button>
+                    <button class="signup-btn">Sign up</button>
+                    <button class="language-btn">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Career Hero Section -->
+            <section class="career-hero">
+                <div class="career-container">
+                    <div class="career-banner">
+                        <div class="flash-promo">
+                            <h2>Udemy Flash Sale: 24 hours to save!</h2>
+                            <p>Get courses from $13.99. Skills for every stage of your career. Sale ends today.</p>
+                        </div>
+                        <img src="https://s.udemycdn.com/browse_components/billboard/fallback_banner_image_udlite.jpg" alt="Udemy Flash Sale">
+                    </div>
+                    
+                    <div class="career-reimagine">
+                        <h2 class="career-title">Ready to reimagine your career?</h2>
+                        <p class="career-subtitle">See what you can achieve with professional courses and certificates.</p>
+                        
+                        <div class="career-paths">
+                            <div class="career-path-card">
+                                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="Full Stack Web Developer">
+                                <h3>Full Stack Web Developer</h3>
+                                <p>Become job-ready for in-demand web development roles</p>
+                                <div class="badge">91,000+ learners</div>
+                                <button class="career-btn">View Program</button>
+                            </div>
+                            
+                            <div class="career-path-card">
+                                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="Digital Marketer">
+                                <h3>Digital Marketer</h3>
+                                <p>Build in-demand skills to drive business growth online</p>
+                                <div class="badge">45,000+ learners</div>
+                                <button class="career-btn">View Program</button>
+                            </div>
+                            
+                            <div class="career-path-card">
+                                <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="Data Scientist">
+                                <h3>Data Scientist</h3>
+                                <p>Learn to analyze data and build machine learning models</p>
+                                <div class="badge">72,000+ learners</div>
+                                <button class="career-btn">View Program</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h2 class="section-title">All the skills you need in one place</h2>
+                        <p class="section-subtitle">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
+                        
+                        <div class="skills-tabs">
+                            <button class="skill-tab active">Most Popular</button>
+                            <button class="skill-tab">IT Certifications</button>
+                            <button class="skill-tab">Communication</button>
+                            <button class="skill-tab">Web Development</button>
+                            <button class="skill-tab">Data Science</button>
+                            <button class="skill-tab">Business Analytics & Intelligence</button>
+                        </div>
+                        
+                        <div class="popular-categories">
+                            <div class="category-chip">
+                                <span class="chip-name">Data Science</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">IT Certifications</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">Communication</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">Web Development</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">Project Management</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">Business Analytics & Intelligence</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">Graphics</span>
+                            </div>
+                            <div class="category-chip">
+                                <span class="chip-name">More</span>
+                            </div>
+                        </div>
+                        
+                        <div class="top-courses">
+                            <div class="course-card">
+                                <img class="course-image" src="https://img-c.udemycdn.com/course/240x135/1565838_e54e_16.jpg" alt="Course">
+                                <div class="course-content">
+                                    <h3 class="course-title">Machine Learning A-Z™: AI, Python & R + ChatGPT Bonus [2024]</h3>
+                                    <p class="course-instructor">Kirill Eremenko, Hadelin de Ponteves</p>
+                                    <div class="course-rating">
+                                        <span class="rating-number">4.5</span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-count">(169,404)</span>
+                                    </div>
+                                    <div class="course-meta">
+                                        <span class="bestseller">Bestseller</span>
+                                    </div>
+                                    <div class="course-price">$89.99</div>
+                                </div>
+                            </div>
+                            
+                            <div class="course-card">
+                                <img class="course-image" src="https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg" alt="Course">
+                                <div class="course-content">
+                                    <h3 class="course-title">Complete Python Bootcamp From Zero to Hero in Python</h3>
+                                    <p class="course-instructor">Jose Portilla</p>
+                                    <div class="course-rating">
+                                        <span class="rating-number">4.6</span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-count">(478,484)</span>
+                                    </div>
+                                    <div class="course-meta">
+                                        <span class="bestseller">Bestseller</span>
+                                    </div>
+                                    <div class="course-price">$89.99</div>
+                                </div>
+                            </div>
+                            
+                            <div class="course-card">
+                                <img class="course-image" src="https://img-c.udemycdn.com/course/240x135/2196488_8fc7_10.jpg" alt="Course">
+                                <div class="course-content">
+                                    <h3 class="course-title">ChatGPT Masterclass: A Complete ChatGPT Guide for Beginners</h3>
+                                    <p class="course-instructor">Maximilian Schwarzmüller</p>
+                                    <div class="course-rating">
+                                        <span class="rating-number">4.7</span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-count">(68,591)</span>
+                                    </div>
+                                    <div class="course-meta">
+                                        <span class="bestseller">Bestseller</span>
+                                    </div>
+                                    <div class="course-price">$89.99</div>
+                                </div>
+                            </div>
+                            
+                            <div class="course-card">
+                                <img class="course-image" src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg" alt="Course">
+                                <div class="course-content">
+                                    <h3 class="course-title">Microsoft Power BI - Up & Running With Power BI Desktop</h3>
+                                    <p class="course-instructor">Maven Analytics, Chris Dutton</p>
+                                    <div class="course-rating">
+                                        <span class="rating-number">4.6</span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="rating-count">(60,349)</span>
+                                    </div>
+                                    <div class="course-meta">
+                                        <span class="bestseller">Bestseller</span>
+                                    </div>
+                                    <div class="course-price">$89.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- More sections to be continued in part 10 -->
+             <!-- Learning Goals Section -->
+        <div class="learning-goals">
+            <div class="career-container">
+                <h2 class="section-title">Learning focused on your goals</h2>
+                
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3>Results are learning</h3>
+                            <p>Learning isn't just about being better at your job: it's about being better at life. Expand your skill set and achieve your goals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3>Get hands-on</h3>
+                            <p>Learn by doing with real-world projects and hands-on exercises. Get instant feedback and improve as you learn.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3>Insights and analytics</h3>
+                            <p>Track your progress with detailed performance metrics. Identify areas for improvement and master new skills.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <div class="goal-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="goal-content">
+                            <h3>Collaborative learning</h3>
+                            <p>Join a global community of learners. Share knowledge, exchange ideas, and grow together in a supportive environment.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Plans Section -->
+        <div class="plans-section">
+            <div class="career-container">
+                <h2 class="section-title">Accelerate growth — for you or your organization</h2>
+                
+                <div class="plans-container">
+                    <div class="plan-card">
+                        <h3 class="plan-title">Personal Plan</h3>
+                        <p class="plan-subtitle">$16.58 / month</p>
+                        <button class="plan-btn">Start your free trial</button>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Access 25,000+ Udemy courses</li>
+                            <li><i class="fas fa-check"></i> Learn at your own pace</li>
+                            <li><i class="fas fa-check"></i> Access on mobile and desktop</li>
+                            <li><i class="fas fa-check"></i> Certificate of completion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-card">
+                        <h3 class="plan-title">Team Plan</h3>
+                        <p class="plan-subtitle">$14.99 per user/month</p>
+                        <button class="plan-btn">Start team training</button>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Access 25,000+ Udemy courses</li>
+                            <li><i class="fas fa-check"></i> Team management tools</li>
+                            <li><i class="fas fa-check"></i> Single sign-on (SSO)</li>
+                            <li><i class="fas fa-check"></i> Detailed reporting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-card">
+                        <h3 class="plan-title">Enterprise Plan</h3>
+                        <p class="plan-subtitle">Contact us for pricing</p>
+                        <button class="plan-btn">Request a demo</button>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Access 25,000+ Udemy courses</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> Enterprise integration</li>
+                            <li><i class="fas fa-check"></i> Onboarding & implementation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- AI Recommender Section -->
+        <section class="ai-recommender">
+            <div class="recommender-container">
+                <div class="recommender-content">
+                    <h2 class="recommender-title">Find your perfect course with AI</h2>
+                    <p class="recommender-subtitle">Our new AI-powered recommender will help you discover courses that match your career goals and learning style.</p>
+                    
+                    <div class="recommender-form">
+                        <div class="form-group">
+                            <label for="career-goals">What are your career goals?</label>
+                            <input type="text" id="career-goals" placeholder="e.g., Become a data scientist, improve leadership skills">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience-level">Your experience level</label>
+                            <select id="experience-level">
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner - No experience</option>
+                                <option value="intermediate">Intermediate - Some experience</option>
+                                <option value="advanced">Advanced - Experienced professional</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time-commitment">How much time can you commit weekly?</label>
+                            <select id="time-commitment">
+                                <option value="">Select your availability</option>
+                                <option value="low">1-3 hours</option>
+                                <option value="medium">4-6 hours</option>
+                                <option value="high">7+ hours</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-style">Preferred learning style</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="hands-on" name="learning-style" value="hands-on">
+                                    <label for="hands-on">Hands-on projects</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="video-lectures" name="learning-style" value="video-lectures">
+                                    <label for="video-lectures">Video lectures</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="reading" name="learning-style" value="reading">
+                                    <label for="reading">Reading materials</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="recommender-button" id="generate-recommendations">
+                            <i class="fas fa-brain"></i> Generate Personalized Recommendations
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="recommendation-results" id="recommendation-results" style="display: none;">
+                    <h3 class="results-title">Your Personalized Course Path</h3>
+                    <p class="results-subtitle">Based on your profile, we recommend these courses to help you achieve your goals:</p>
+                    
+                    <div class="recommended-courses">
+                        <!-- Recommended courses will be dynamically inserted here -->
+                    </div>
+                    
+                    <div class="recommendation-note">
+                        <p><i class="fas fa-info-circle"></i> Our AI has analyzed thousands of successful learning paths to create this personalized recommendation.</p>
+                    </div>
+                    
+                    <button class="save-recommendations">Save This Learning Path</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Directory -->
+        <section class="skills-directory">
+            <div class="directory-container">
+                <h2 class="directory-title">Explore top skills and certifications</h2>
+                
+                <div class="directory-grid">
+                    <div class="directory-column">
+                        <h3 class="column-title">In-demand Careers</h3>
+                        <ul class="directory-links">
+                            <li><a href="#">Data Scientist</a></li>
+                            <li><a href="#">Full Stack Web Developer</a></li>
+                            <li><a href="#">Cloud Engineer</a></li>
+                            <li><a href="#">Project Manager</a></li>
+                            <li><a href="#">Game Developer</a></li>
+                            <li><a href="#">See all Career Academies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="directory-column">
+                        <h3 class="column-title">Web Development</h3>
+                        <ul class="directory-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">React JS</a></li>
+                            <li><a href="#">Angular</a></li>
+                            <li><a href="#">Java</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="directory-column">
+                        <h3 class="column-title">IT Certifications</h3>
+                        <ul class="directory-links">
+                            <li><a href="#">Amazon AWS</a></li>
+                            <li><a href="#">AWS Certified Cloud Practitioner</a></li>
+                            <li><a href="#">AZ-900: Microsoft Azure Fundamentals</a></li>
+                            <li><a href="#">AWS Certified Solutions Architect - Associate</a></li>
+                            <li><a href="#">Kubernetes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="directory-column">
+                        <h3 class="column-title">Leadership</h3>
+                        <ul class="directory-links">
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Management Skills</a></li>
+                            <li><a href="#">Project Management</a></li>
+                            <li><a href="#">Personal Productivity</a></li>
+                            <li><a href="#">Emotional Intelligence</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Business Banner -->
+        <section class="business-banner">
+            <div class="banner-container">
+                <h2 class="banner-title">Top companies choose <span class="highlight">Udemy Business</span> to build in-demand career skills.</h2>
+                <div class="company-logos">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg" alt="Nasdaq">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="Volkswagen">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg" alt="NetApp">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="Eventbrite">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Udemy Business</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Teach on Udemy</a></li>
+                    <li><a href="#">Get the app</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Careers</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help and Support</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Terms</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie settings</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Accessibility statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Finance & Accounting</a></li>
+                    <li><a href="#">IT & Software</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>More Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Languages</h4>
+                <ul class="footer-links">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">Português</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <img class="footer-logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy">
+            <p class="copyright">© 2024 Udemy, Inc.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for site functionality -->
+    <script>
+        // Search functionality
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const searchTerm = document.querySelector('.search-input').value;
+            if (searchTerm.trim() !== '') {
+                alert(`Searching for: ${searchTerm}`);
+            }
+        });
+        
+        // Close flash sale banner
+        document.querySelector('.close-banner').addEventListener('click', function() {
+            document.querySelector('.flash-sale').style.display = 'none';
+        });
+        
+        // Course card hover effect
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+        
+        // AI Course Recommender Functionality
+        document.getElementById('generate-recommendations').addEventListener('click', function() {
+            const careerGoals = document.getElementById('career-goals').value;
+            const experienceLevel = document.getElementById('experience-level').value;
+            const timeCommitment = document.getElementById('time-commitment').value;
+            const learningStyle = document.querySelector('input[name="learning-style"]:checked')?.value;
+            
+            if (!careerGoals || !experienceLevel || !timeCommitment || !learningStyle) {
+                alert('Please fill in all fields to get personalized recommendations.');
+                return;
+            }
+            
+            // Show loading state
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating recommendations...';
+            this.disabled = true;
+            
+            // Simulate AI processing
+            setTimeout(() => {
+                // Generate course recommendations based on user input
+                generateRecommendations(careerGoals, experienceLevel, timeCommitment, learningStyle);
+                
+                // Reset button
+                this.innerHTML = '<i class="fas fa-brain"></i> Generate Personalized Recommendations';
+                this.disabled = false;
+                
+                // Show results section
+                document.getElementById('recommendation-results').style.display = 'block';
+                
+                // Scroll to results
+                document.getElementById('recommendation-results').scrollIntoView({ behavior: 'smooth' });
+            }, 2000);
+        });
+        
+        // Generate course recommendations based on user inputs
+        function generateRecommendations(careerGoals, experienceLevel, timeCommitment, learningStyle) {
+            const recommendedCoursesContainer = document.querySelector('.recommended-courses');
+            recommendedCoursesContainer.innerHTML = '';
+            
+            // Course database (in a real app, this would come from an API)
+            const courses = [
+                {
+                    title: "The Complete Web Developer in 2024: Zero to Mastery",
+                    instructor: "Andrei Neagoie",
+                    image: "https://img-c.udemycdn.com/course/240x135/1430746_2f43_10.jpg",
+                    rating: 4.7,
+                    reviews: 43981,
+                    price: 89.99,
+                    tags: ["web development", "beginner", "hands-on"]
+                },
+                {
+                    title: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
+                    instructor: "Kirill Eremenko, Hadelin de Ponteves",
+                    image: "https://img-c.udemycdn.com/course/240x135/950390_270f_3.jpg",
+                    rating: 4.5,
+                    reviews: 169404,
+                    price: 89.99,
+                    tags: ["data science", "intermediate", "hands-on"]
+                },
+                {
+                    title: "AWS Certified Solutions Architect - Associate 2024",
+                    instructor: "Stephane Maarek",
+                    image: "https://img-c.udemycdn.com/course/240x135/362328_91f3_10.jpg",
+                    rating: 4.7,
+                    reviews: 160574,
+                    price: 89.99,
+                    tags: ["cloud", "advanced", "video-lectures"]
+                },
+                {
+                    title: "The Project Management Course: Beginner to PROject Manager",
+                    instructor: "365 Careers",
+                    image: "https://img-c.udemycdn.com/course/240x135/1361790_2eb7_6.jpg",
+                    rating: 4.6,
+                    reviews: 30774,
+                    price: 89.99,
+                    tags: ["project management", "beginner", "reading"]
+                },
+                {
+                    title: "Leadership: Practical Leadership Skills",
+                    instructor: "Chris Croft",
+                    image: "https://img-c.udemycdn.com/course/240x135/615264_3892_7.jpg",
+                    rating: 4.5,
+                    reviews: 25874,
+                    price: 89.99,
+                    tags: ["leadership", "intermediate", "video-lectures"]
+                }
+            ];
+            
+            // Simple recommendation algorithm based on user inputs
+            let recommendedCourses = [];
+            
+            if (careerGoals.toLowerCase().includes("web") || careerGoals.toLowerCase().includes("developer")) {
+                recommendedCourses.push(courses[0]);
+            }
+            
+            if (careerGoals.toLowerCase().includes("data") || careerGoals.toLowerCase().includes("machine learning")) {
+                recommendedCourses.push(courses[1]);
+            }
+            
+            if (careerGoals.toLowerCase().includes("cloud") || careerGoals.toLowerCase().includes("aws")) {
+                recommendedCourses.push(courses[2]);
+            }
+            
+            if (careerGoals.toLowerCase().includes("project") || careerGoals.toLowerCase().includes("management")) {
+                recommendedCourses.push(courses[3]);
+            }
+            
+            if (careerGoals.toLowerCase().includes("lead") || careerGoals.toLowerCase().includes("leadership")) {
+                recommendedCourses.push(courses[4]);
+            }
+            
+            // If no specific matches, recommend based on experience level
+            if (recommendedCourses.length === 0) {
+                if (experienceLevel === "beginner") {
+                    recommendedCourses.push(courses[0], courses[3]);
+                } else if (experienceLevel === "intermediate") {
+                    recommendedCourses.push(courses[1], courses[4]);
+                } else {
+                    recommendedCourses.push(courses[2]);
+                }
+            }
+            
+            // Filter by learning style if we have enough recommendations
+            if (recommendedCourses.length > 2) {
+                recommendedCourses = recommendedCourses.filter(course => 
+                    course.tags.includes(experienceLevel) || course.tags.includes(learningStyle)
+                );
+            }
+            
+            // If we filtered too much, add some back
+            if (recommendedCourses.length < 2) {
+                recommendedCourses = courses.slice(0, 3);
+            }
+            
+            // Limit to max 3 recommendations
+            recommendedCourses = recommendedCourses.slice(0, 3);
+            
+            // Create course cards
+            recommendedCourses.forEach(course => {
+                const courseCard = document.createElement('div');
+                courseCard.className = 'recommendation-card';
+                
+                courseCard.innerHTML = `
+                    <img src="${course.image}" alt="${course.title}" class="recommendation-image">
+                    <div class="recommendation-content">
+                        <h4 class="recommendation-title">${course.title}</h4>
+                        <p class="recommendation-instructor">${course.instructor}</p>
+                        <div class="recommendation-rating">
+                            <span class="rating-number">${course.rating}</span>
+                            ${generateStars(course.rating)}
+                            <span class="rating-count">(${course.reviews.toLocaleString()})</span>
+                        </div>
+                        <div class="recommendation-price">$${course.price}</div>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                `;
+                
+                recommendedCoursesContainer.appendChild(courseCard);
+            });
+        }
+        
+        // Generate star ratings
+        function generateStars(rating) {
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+            
+            let stars = '';
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            if (halfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+        
+        // Add to cart functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('add-to-cart')) {
+                e.target.innerHTML = '<i class="fas fa-check"></i> Added to cart';
+                e.target.style.backgroundColor = '#3e8a3e';
+                e.target.disabled = true;
+            }
+        });
+        
+        // Save recommendations
+        document.querySelector('.save-recommendations')?.addEventListener('click', function() {
+            alert('Your personalized learning path has been saved! You can access it anytime from your profile.');
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
